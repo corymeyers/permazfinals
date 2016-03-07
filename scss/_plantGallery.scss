@@ -1,0 +1,66 @@
+
+.galleryContainer {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ justify-content: center;
+
+  .plantCard {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    height: $card-height;
+    width: $card-width;
+    overflow: hidden;
+    border: 1px solid $card-color;
+    border-radius: 3px;
+    margin: 10px;
+
+      .plantImg {
+        width: 100%;
+        height: auto;
+      }
+
+      .plantInfo {
+        position: absolute;
+        top: $card-height - $title-height;
+        height: $card-height;
+        width: 100%;
+        color: #fff;
+        background-color: $card-color;
+        opacity: 0.9;
+        transition: transform $transition-time;
+
+          &:hover {
+             transform: translateY(-($card-height - $title-height));
+          }
+
+          .detailsTitle {
+            height: $title-height - 20px;
+            font-size: 20px;
+            padding-left:7px;
+            padding-top: 3px;
+
+            button[type="submit"] {
+              float: right;
+              font-size: 10px;
+              color: black;
+              position: absolute;
+              top: 7px;
+              right: 7px;
+              background-color: $buttonColor;
+              border-radius: 10px;
+              border: 1px solid #AFA47E;
+            }
+            small {
+              font-size: 70%;
+              color: #f7f7f7;
+            }
+          }
+
+          .detailsBody {
+            margin: 19px;
+            text-align: center;
+          }
+    }
+  }
+}
