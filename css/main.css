@@ -7,13 +7,46 @@
   box-sizing: border-box; }
 
 .body {
-  background-color: #C8C8A9; }
+  background: #C8C8A9; }
+
+header {
+  position: fixed;
+  display: inline-block;
+  height: 80px;
+  background-color: #7DB5A5;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  z-index: 99999; }
+  header img {
+    height: 50px;
+    float: left;
+    margin-left: 7px;
+    margin-top: 4px; }
+  header h3 {
+    color: white;
+    margin-left: 70px;
+    margin-top: 5px;
+    font-size: 30pt; }
+  header #hamburger {
+    position: absolute;
+    right: 10px;
+    top: -50px;
+    font-size: 35px;
+    color: white;
+    border: 2pt solid white;
+    border-radius: 5pt;
+    padding: 5px 2px;
+    padding-bottom: 7px; }
+  header .dropdown {
+    background-color: black; }
 
 .galleryContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 100px; }
   .galleryContainer .plantCard {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: relative;

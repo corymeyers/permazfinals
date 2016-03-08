@@ -4,6 +4,7 @@
  flex-wrap: wrap;
  flex-direction: row;
  justify-content: center;
+ padding-top: 100px;
 
   .plantCard {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -49,7 +50,7 @@
               right: 7px;
               background-color: $buttonColor;
               border-radius: 10px;
-              border: 1px solid #AFA47E;
+              border: 1px solid $buttonColor;
             }
             small {
               font-size: 70%;
