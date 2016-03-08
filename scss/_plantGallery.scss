@@ -6,6 +6,7 @@
  justify-content: center;
  padding-top: 100px;
 
+
   .plantCard {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: relative;
@@ -16,9 +17,21 @@
     border-radius: 3px;
     margin: 10px;
 
+      .modal-content {
+        margin-top: 200px;
+      }
+
+      #modalClickthru {
+        outline: none;
+      }
+
       .plantImg {
         width: 100%;
         height: auto;
+
+        &:hover {
+          opacity: 0.6;
+        }
       }
 
       .plantInfo {
@@ -41,17 +54,6 @@
             padding-left:7px;
             padding-top: 3px;
 
-            button[type="submit"] {
-              float: right;
-              font-size: 10px;
-              color: black;
-              position: absolute;
-              top: 7px;
-              right: 7px;
-              background-color: $buttonColor;
-              border-radius: 10px;
-              border: 1px solid $buttonColor;
-            }
             small {
               font-size: 70%;
               color: #f7f7f7;
@@ -61,6 +63,7 @@
           .detailsBody {
             margin: 19px;
             text-align: center;
+
           }
     }
   }

@@ -40,6 +40,8 @@ header {
     padding-bottom: 7px; }
   header .dropdown {
     background-color: black; }
+  header .expandedNav {
+    display: none; }
 
 .galleryContainer {
   display: flex;
@@ -56,9 +58,15 @@ header {
     border: 1px solid #7DB5A5;
     border-radius: 3px;
     margin: 10px; }
+    .galleryContainer .plantCard .modal-content {
+      margin-top: 200px; }
+    .galleryContainer .plantCard #modalClickthru {
+      outline: none; }
     .galleryContainer .plantCard .plantImg {
       width: 100%;
       height: auto; }
+      .galleryContainer .plantCard .plantImg:hover {
+        opacity: 0.6; }
     .galleryContainer .plantCard .plantInfo {
       position: absolute;
       top: 236px;
@@ -75,16 +83,6 @@ header {
         font-size: 20px;
         padding-left: 7px;
         padding-top: 3px; }
-        .galleryContainer .plantCard .plantInfo .detailsTitle button[type="submit"] {
-          float: right;
-          font-size: 10px;
-          color: black;
-          position: absolute;
-          top: 7px;
-          right: 7px;
-          background-color: #AFA47E;
-          border-radius: 10px;
-          border: 1px solid #AFA47E; }
         .galleryContainer .plantCard .plantInfo .detailsTitle small {
           font-size: 70%;
           color: #f7f7f7; }
